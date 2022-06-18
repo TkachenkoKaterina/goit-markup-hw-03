@@ -12,16 +12,95 @@ body {
 	font-size: 14px;
 }
 
+/* ============= Reset ============= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
 /* ============= Current ============= */
 
 a.current-link {
 	color: var(--accent-color);
 }
 
+/* ============= Flex ============= */
+
+.container {
+	width: 1200px;
+	padding: 0 15px;
+	margin-left: auto;
+	margin-right: auto;
+
+	outline: 1px solid tomato;
+}
+
+.nav-flex {
+	display: flex;
+	margin: 0 0 0 93px;
+	padding: 0;
+}
+
+.nav-flex .list {
+	margin-right: 50px;
+}
+
+.nav-flex .list:last-child {
+	margin-right: 0;
+}
+
+/* .nav-flex li {
+	outline: 1px solid tomato;
+} */
+
+.contact-flex {
+	display: flex;
+	padding: 0;
+	margin: 0 0 0 331px;
+}
+
+.contact-flex .list + .list {
+	margin-left: 50px;
+}
+
+.header-flex,
+.peculiarities-flex {
+	display: flex;
+	align-items: center;
+}
+
 /* ============= Header ============= */
 
+.header-flex {
+	border-bottom: 1px solid #ececec;
+}
+
 .logo {
+	display: block;
+	/* background-color: tomato; */
+	padding: 24px 0;
+
 	text-decoration: none;
+	/* margin: 24px 0; */
 }
 
 .logo-first {
@@ -32,6 +111,7 @@ a.current-link {
 	letter-spacing: 0.03em;
 
 	color: var(--accent-color);
+	/* outline: 1px solid tomato; */
 }
 
 .logo-second {
@@ -50,6 +130,10 @@ a.current-link {
 }
 
 .nav-link {
+	display: block;
+	/* background-color: tomato; */
+	padding: 32px 0;
+
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
@@ -64,6 +148,10 @@ a.current-link {
 }
 
 .contact-link {
+	display: block;
+	/* background-color: tomato; */
+	padding: 32px 0;
+
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
@@ -77,25 +165,45 @@ a.current-link {
 	background: #2f303a;
 }
 
+.hero-bg {
+	text-align: center;
+}
+
 .hero-title {
+	margin-bottom: 30px;
+	padding-top: 200px;
+
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
-	text-align: center;
 
 	color: #ffffff;
+}
+
+/* ============= Sections =============*/
+
+.section {
+	padding: 94px 0;
+
+	outline: 2px solid blue;
 }
 
 /* ============= Btn =============*/
 
 .btn {
+	display: inline-block;
+	border-radius: 4px;
+	border: 1px solid var(--accent-color);
+	padding: 10px 32px;
+	min-width: 200px;
+	margin-bottom: 200px;
+
 	font-family: inherit;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 1.88;
-	text-align: center;
 	letter-spacing: 0.06em;
 
 	color: #ffffff;
@@ -127,6 +235,10 @@ a.current-link {
 
 /* ============= Peculiarities Section =============*/
 
+.peculiarities-list {
+	display: flex;
+}
+
 .peculiarities-title {
 	font-size: 14px;
 	font-weight: 700;
@@ -157,6 +269,11 @@ a.current-link {
 
 .section-bg {
 	background: #f5f4fa;
+}
+
+.work-list,
+.workers {
+	display: flex;
 }
 
 .name {
@@ -191,10 +308,6 @@ a.current-link {
 	text-decoration-line: none;
 
 	color: rgba(255, 255, 255, 0.6);
-}
-
-.list {
-	list-style-type: none;
 }
 
 /* ============= Portfolio =============*/

@@ -23,6 +23,7 @@ h6,
 p,
 ul {
 	margin: 0;
+	padding: 0;
 }
 
 img {
@@ -68,10 +69,6 @@ a.current-link {
 	margin-right: 0;
 }
 
-/* .nav-flex li {
-	outline: 1px solid tomato;
-} */
-
 .contact-flex {
 	display: flex;
 	padding: 0;
@@ -96,11 +93,12 @@ a.current-link {
 
 .logo {
 	display: block;
-	/* background-color: tomato; */
-	padding: 24px 0;
 
 	text-decoration: none;
-	/* margin: 24px 0; */
+}
+
+.logo-footer {
+	text-decoration: none;
 }
 
 .logo-first {
@@ -111,7 +109,6 @@ a.current-link {
 	letter-spacing: 0.03em;
 
 	color: var(--accent-color);
-	/* outline: 1px solid tomato; */
 }
 
 .logo-second {
@@ -125,13 +122,12 @@ a.current-link {
 	color: #000000;
 }
 
-.logo > .logo-second-white {
+.logo-footer > .logo-second-white {
 	color: #ffffff;
 }
 
 .nav-link {
 	display: block;
-	/* background-color: tomato; */
 	padding: 32px 0;
 
 	font-weight: 500;
@@ -149,7 +145,6 @@ a.current-link {
 
 .contact-link {
 	display: block;
-	/* background-color: tomato; */
 	padding: 32px 0;
 
 	font-weight: 500;
@@ -170,8 +165,10 @@ a.current-link {
 }
 
 .hero-title {
+	width: 696px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 30px;
-	padding-top: 200px;
 
 	font-weight: 900;
 	font-size: 44px;
@@ -187,9 +184,13 @@ a.current-link {
 .section {
 	padding: 94px 0;
 
-	outline: 2px solid blue;
+	outline: 1px solid blue;
 }
 
+.section-hero {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
 /* ============= Btn =============*/
 
 .btn {
@@ -198,7 +199,6 @@ a.current-link {
 	border: 1px solid var(--accent-color);
 	padding: 10px 32px;
 	min-width: 200px;
-	margin-bottom: 200px;
 
 	font-family: inherit;
 	font-weight: 700;
@@ -216,6 +216,11 @@ a.current-link {
 }
 
 .btn-filter {
+	display: block;
+	padding: 6px 22px;
+	border-radius: 4px;
+	border: 1px solid var(--accent-color)
+
 	font-family: var(--dominant-font), sans-serif;
 	font-weight: 500;
 	font-size: 16px;
@@ -237,6 +242,11 @@ a.current-link {
 
 .peculiarities-list {
 	display: flex;
+	margin: 0;
+}
+
+.peculiarities-list .list {
+	width: 270px;
 }
 
 .peculiarities-title {
@@ -250,14 +260,25 @@ a.current-link {
 }
 
 .peculiarities-text {
+	margin-top: 10px;
 	letter-spacing: 0.03em;
+	line-height: 1.71;
 
 	color: var(--dominant-color);
 }
 
+.peculiarities-list .list + .list {
+	margin-left: 30px;
+}
+
 /* ============= Section (Our comand ant What we do) =============*/
 
+.section-work {
+	padding: 0 0 94px 0;
+}
+
 .section-title {
+	margin-bottom: 50px;
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
@@ -274,6 +295,10 @@ a.current-link {
 .work-list,
 .workers {
 	display: flex;
+}
+
+.work-list .list + .list {
+	margin-left: 30px;
 }
 
 .name {
@@ -293,12 +318,32 @@ a.current-link {
 	color: var(--dominant-color);
 }
 
+.workers .list + .list {
+	margin-left: 30px;
+}
+
+.name {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.work-position {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.workers > .list {
+	background: #ffffff;
+	padding-bottom: 30px;
+}
+
 /* ============= Footer =============*/
 
 .adress {
 	letter-spacing: 0.03em;
 	text-decoration: none;
 	font-style: normal;
+	line-height: 1.71;
 
 	color: #ffffff;
 }
@@ -310,9 +355,25 @@ a.current-link {
 	color: rgba(255, 255, 255, 0.6);
 }
 
+.section-footer {
+	padding: 60px 0;
+}
+
+.footer-address {
+	margin-top: 20px;
+	margin-bottom: 9px;
+}
+
+.foter-list .list + .list {
+	margin-top: 9px;
+}
 /* ============= Portfolio =============*/
 
 .title-portfolio {
+	margin-top: 20px;
+	margin-bottom: 4px;
+	padding-left: 24px;
+
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 2;
@@ -322,9 +383,45 @@ a.current-link {
 }
 
 .name-portfolio {
+	margin-bottom: 20px;
+	padding-left: 24px;
+
 	font-size: 16px;
 	line-height: 1.88;
 	letter-spacing: 0.03em;
 
 	color: var(--dominant-color);
 }
+
+.container-filter,
+.container-portfolio {
+	display: flex;
+	justify-content: center;
+}
+
+.container-filter .list + .list {
+	margin-left: 8px;
+}
+
+.container-filter {
+	padding-bottom: 50px;
+}
+.container-portfolio {
+	flex-wrap: wrap;
+}
+
+.container-portfolio > .list{
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+
+.container-portfolio > .list:nth-child(3n+3) {
+	margin-right: 0px;
+}
+
+.container-portfolio > .list:nth-last-child(-n+3) {
+	margin-bottom: 0px;
+}
+
+
+

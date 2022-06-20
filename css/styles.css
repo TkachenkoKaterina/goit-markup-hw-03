@@ -52,7 +52,7 @@ a.current-link {
 	margin-left: auto;
 	margin-right: auto;
 
-	outline: 1px solid tomato;
+	/* outline: 1px solid tomato; */
 }
 
 .nav-flex {
@@ -184,7 +184,7 @@ a.current-link {
 .section {
 	padding: 94px 0;
 
-	outline: 1px solid blue;
+	/* outline: 1px solid blue; */
 }
 
 .section-hero {

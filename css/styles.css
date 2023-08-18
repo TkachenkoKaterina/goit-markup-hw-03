@@ -70,8 +70,8 @@ button {
 }
 
 .section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .container {
   max-width: 1158px;
@@ -125,12 +125,12 @@ button {
 
 .logo-studio {
   color: var(--navy-blue);
-    font-family: 'Raleway', sans-serif;
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 1.17;
-    letter-spacing: 0.54px;
-    text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
 }
 
 .nav-list-link {
@@ -168,7 +168,6 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding-top: 188px;
   padding-bottom: 188px;
 }
@@ -179,9 +178,6 @@ button {
 
 .hero-title {
   display: inline-block;
-  /* padding-top: 188px;
-  padding-left: auto;
-  padding-right: auto; */
   margin-bottom: 48px;
   width: 496px;
   text-align: center;
@@ -224,7 +220,6 @@ button {
 
 .benefits {
   padding-top: 120px;
-  padding-bottom: 60px;
 }
 .benefits-list {
   display: flex;
@@ -264,8 +259,6 @@ button {
 /* team */
 
 .team {
-  padding-top: 60px;
-  padding-bottom: 120px;
   background-color: var(--cloud);
 }
 

@@ -81,6 +81,11 @@ button {
   margin-right: auto;
 }
 
+/* header */
+
+.header-section {
+  border-bottom: 1px solid var(--cornflower);
+}
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -245,7 +250,6 @@ button {
   letter-spacing: 0.02em;
 }
 
-
 /* doing */
 
 .doing-list {
@@ -320,7 +324,21 @@ button {
 
 /* Portfolio */
 
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.filter-list {
+  margin-bottom: 72px;
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+}
+
 .filter-list-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -338,12 +356,33 @@ button {
   cursor: pointer;
 }
 
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 48px 24px;
+}
+
+.card-list-item {
+  background-color: var(--white);
+}
+
+.card-list-item-info {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border-left: 1px solid var(--cornflower);
+  border-bottom: 1px solid var(--cornflower);
+  border-right: 1px solid var(--cornflower);
+}
+
 .card-list-title {
+  margin-bottom: 8px;
   font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--navy-blue);
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--navy-blue);
 }
 
 .card-list-text {
